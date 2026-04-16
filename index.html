@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mazen Khaled | Full-Stack Developer</title>
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- DevIcon for Tech Stack Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- DevIcon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="CSS/variables.css">
+  <link rel="stylesheet" href="CSS/animations.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+  <!-- Spotlight Overlay -->
+  <div id="spotlight-overlay"></div>
+
+  <!-- Theatre Split Preloader -->
+  <div id="preloader-wrapper">
+    <div id="preloader-top" class="preloader-half"></div>
+    <div id="preloader-bottom" class="preloader-half"></div>
+    <div class="loader-content" id="loader-content">
+      <div id="loader-percent">0%</div>
+      <h2 class="logo-loader">Eng. MAZEN<span>KHALED</span></h2>
+    </div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- Dynamic Glowing Background -->
+  <div class="bg-glow"></div>
+  <canvas id="particles-canvas" style="position:fixed; top:0; left:0; width:100vw; height:100vh; z-index:-2; pointer-events:none;"></canvas>
+  <canvas id="matrix-canvas" style="position:fixed; top:0; left:0; width:100vw; height:100vh; z-index:-2; pointer-events:none; opacity:0; transition:opacity 0.5s;"></canvas>
+
+  <!-- Navbar -->
+  <header>
+    <div class="logo-wrapper">
+      <a href="#" class="logo">MAZEN<span>KHALED</span></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="container hero">
+    <div class="hero-content scale-in">
+      <div class="availability-badge">
+        <span class="pulse-dot"></span> Available for Work &bull; <span id="local-time"></span>
+      </div>
+      <h3>Hello! I am</h3>
+      <h1 class="magnetic-name">
+        <span class="highlight">
+          <span class="mag-letter">M</span><span class="mag-letter">a</span><span class="mag-letter">z</span><span class="mag-letter">e</span><span class="mag-letter">n</span> 
+          <span class="mag-letter">K</span><span class="mag-letter">h</span><span class="mag-letter">a</span><span class="mag-letter">l</span><span class="mag-letter">e</span><span class="mag-letter">d</span>
+        </span>
+      </h1>
+      <span class="typewriter-text">Frontend Developer</span>
+      <p>Providing the best project experience. I specialize in building high-performance modern web applications with a focus on delivering outstanding digital experiences and highly-crafted animations.</p>
+      
+      <div class="btn-group">
+        <a href="MAZEN_KHALED_FlowCV_Resume_2026-04-14.pdf" target="_blank" download class="btn btn-primary magnetic">Download CV <i class="fa-solid fa-download"></i></a>
+        <a href="#contact" class="btn btn-secondary magnetic">Hire Me <i class="fa-solid fa-paper-plane"></i></a>
+      </div>
+    </div>
+    
+    <div class="hero-image fade-in">
+      <div class="image-wrapper">
+        <!-- Using the newly requested photo -->
+        <img src="WhatsApp Image 2026-04-14 at 7.43.10 PM.jpeg" alt="Mazen Khaled">
+      </div>
+      
+      <!-- Newly Added Floating Code Card -->
+      <div class="floating-code-card">
+        <div class="code-card-header">
+          <span class="mac-dot red"></span>
+          <span class="mac-dot yellow"></span>
+          <span class="mac-dot green"></span>
+        </div>
+        <div class="code-content">
+<pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+  <span class="property">name</span>: <span class="string">'Mazen Khaled'</span>,
+  <span class="property">skills</span>: [<span class="string">'React'</span>, <span class="string">'JS'</span>, <span class="string">'CSS'</span>],
+  <span class="property">hardWorker</span>: <span class="boolean">true</span>
+};</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container">
+    <h2 class="section-title fade-in">About <span>Me</span></h2>
+    <div class="about-content fade-in">
+      <div class="about-text">
+        <p>I am a visionary <strong>Full Stack Developer</strong>, Video Editor, and the Founder of <strong>MHD Tech</strong>, currently based in Egypt. Pursuing advanced studies in AI and Machine Learning at Tanta University, I bridge the gap between technical engineering and creative storytelling.</p>
+        <p>My professional philosophy centers on the idea that software development is more than just writing code—it’s about architecting smart digital solutions that empower businesses and drive growth. At MHD Tech, I focus on delivering global-standard quality through "Egyptian hands," specializing in scalable web applications and cinematic visual content.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-item">
+          <h3>1+</h3>
+          <p>Years Experience</p>
+        </div>
+        <div class="stat-item">
+          <h3>MHD</h3>
+          <p>Tech Founder</p>
+        </div>
+        <div class="stat-item">
+          <h3>AI</h3>
+          <p>ML Enthusiast</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Infinite Marquee -->
+  <div class="marquee-container">
+    <div class="marquee-content">
+      <span>AI & ML ENGINEERING</span> <i class="fa-solid fa-bolt"></i> 
+      <span>DELIVERING PREMIUM EXPERIENCES</span> <i class="fa-solid fa-bolt"></i> 
+      <span>BUILDING INTELLIGENT SYSTEMS</span> <i class="fa-solid fa-bolt"></i> 
+      <span>AWWWARDS LEVEL ANIMATIONS</span> <i class="fa-solid fa-bolt"></i>
+      <span>AI & ML ENGINEERING</span> <i class="fa-solid fa-bolt"></i> 
+      <span>DELIVERING PREMIUM EXPERIENCES</span> <i class="fa-solid fa-bolt"></i> 
+      <span>BUILDING INTELLIGENT SYSTEMS</span> <i class="fa-solid fa-bolt"></i> 
+      <span>AWWWARDS LEVEL ANIMATIONS</span> <i class="fa-solid fa-bolt"></i>
+    </div>
+  </div>
+
+  <!-- Journey / Experience Section -->
+  <section id="journey" class="container">
+    <h2 class="section-title fade-in">My <span>Journey</span></h2>
+    <div class="timeline">
+      <div class="timeline-item fade-in">
+        <div class="timeline-content">
+          <h3>Computer Science Student, AI & ML</h3>
+          <h4>Tanta University</h4>
+          <p>Currently pursuing my studies in Artificial Intelligence and Machine Learning, aiming to merge bleeding-edge software models with functional web mechanics.</p>
+        </div>
+      </div>
+      <div class="timeline-item fade-in">
+        <div class="timeline-content">
+          <h3>Founder & Visionary</h3>
+          <h4>MHD Tech</h4>
+          <p>Founded MHD Tech to bridge the gap between creative visual content and robust technical solutions, delivering highly performant scalable systems and high-craft design.</p>
+        </div>
+      </div>
+      <div class="timeline-item fade-in">
+        <div class="timeline-content">
+          <h3>Freelance Developer & Editor</h3>
+          <h4>Global</h4>
+          <p>Delivered cinematic video editing and full-stack software development projects for global and local clients across diverse industries.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="container">
+    <h2 class="section-title fade-in">My <span>Skills</span></h2>
+    <div class="skills-grid">
+      <!-- Injected dynamically via JS -->
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container">
+    <h2 class="section-title fade-in">Featured <span>Projects</span></h2>
+    <div class="projects-grid">
+      <!-- Injected dynamically via JS -->
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="container">
+    <h2 class="section-title fade-in">Get In <span>Touch</span></h2>
+    <div class="contact-container fade-in">
+      
+      <div class="contact-info">
+        <h3>Let's Talk</h3>
+        <p>I'm currently available to take on new projects, so feel free to send me a message about anything that you want to run past me.</p>
+        
+        <div class="info-item">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <h4>Email</h4>
+            <span>mazen.khaled@example.com</span>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <h4>Location</h4>
+            <span>Egypt</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form id="contact-form">
+          <div class="input-group">
+            <input type="text" id="contact-name" placeholder="Your Name" required>
+          </div>
+          <div class="input-group">
+            <input type="email" id="contact-email" placeholder="Your Email" required>
+          </div>
+          <div class="input-group">
+            <textarea id="contact-message" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send to WhatsApp <i class="fa-brands fa-whatsapp"></i></button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://github.com/khaledmazen437-lgtm" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.facebook.com/share/1LCy57E6ue/" target="_blank" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://wa.me/201226935593" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://t.me/Mcdf5" target="_blank" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+      </div>
+      <p>&copy; 2026 Mazen Khaled. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Global System OS Controls -->
+  <div id="os-controls">
+    <div id="spotlight-toggle" class="magnetic" title="Toggle Spotlight Mode">
+      <i class="fa-solid fa-lightbulb"></i>
+    </div>
+    <div id="terminal-trigger" class="magnetic" title="Open Developer Terminal">
+      <i class="fa-solid fa-terminal"></i>
+    </div>
+    <div id="theme-switcher" class="magnetic">
+      <i class="fa-solid fa-palette"></i>
+      <div class="theme-options">
+        <div class="theme-btn" data-theme="default">Neon</div>
+        <div class="theme-btn" data-theme="matrix">Matrix</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI Chatbot Assistant -->
+  <div id="ai-bot-trigger" class="magnetic"><i class="fa-solid fa-robot"></i></div>
+  <div id="ai-bot-window" class="hidden">
+    <div class="bot-header">Mazen AI 🟢 <i class="fa-solid fa-times" id="close-bot" style="cursor:pointer; float:right;"></i></div>
+    <div class="bot-chat" id="bot-chat-area">
+      <div class="bot-msg">System Online. Hello! Ask me about Mazen's skills, or tell me to 'go to contact'.</div>
+    </div>
+    <div class="bot-input">
+      <input type="text" id="bot-input-field" placeholder="Terminal input...">
+      <button id="send-bot-msg"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+  </div>
+
+  <!-- Developer Terminal -->
+  <div id="dev-terminal-window" class="hidden">
+    <div class="terminal-header">
+      <span>MazenOS Terminal</span>
+      <i class="fa-solid fa-times" id="close-terminal" style="cursor:pointer; float:right;"></i>
+    </div>
+    <div class="terminal-output" id="terminal-output">
+      <div>Welcome to Mazen OS. Type "help" for a list of commands.</div>
+    </div>
+    <div class="terminal-input-group">
+      <span class="user-prompt">guest@mazen:~$</span>
+      <input type="text" id="terminal-input-field" autocomplete="off" spellcheck="false" autofocus>
+    </div>
+  </div>
+
+  <!-- Custom Context Menu -->
+  <div id="custom-context-menu" class="hidden">
+    <ul>
+      <li onclick="window.location.href='#contact'"><i class="fa-solid fa-envelope"></i> Contact Me</li>
+      <li onclick="window.open('MAZEN_KHALED_FlowCV_Resume_2026-04-14.pdf')"><i class="fa-solid fa-download"></i> Download CV</li>
+      <li onclick="window.open('https://github.com/khaledmazen437-lgtm')"><i class="fa-brands fa-github"></i> View GitHub</li>
+    </ul>
+  </div>
+
+  <!-- Scripts -->
+  <script src="JS/main.js"></script>
+  <script src="JS/background.js"></script>
+</body>
+</html>
