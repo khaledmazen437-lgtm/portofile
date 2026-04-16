@@ -1059,3 +1059,57 @@ body.spotlight-on #spotlight-overlay { opacity: 1; }
 .magnetic-name { display: flex; gap: 2px; }
 .mag-letter { display: inline-block; padding: 0 1px; transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.3s; }
 .mag-letter:hover { color: var(--primary-neon); }
+
+/* ================================= */
+/* MOBILE RESPONSIVE ENGINE */
+/* ================================= */
+
+@media (max-width: 992px) {
+  .hero { flex-direction: column-reverse; text-align: center; gap: 40px; }
+  .hero-content { align-items: center; }
+  .hero-content h1 { font-size: 3.5rem; justify-content: center; }
+  .btn-group { justify-content: center; }
+  .hero-image::after { width: 300px; height: 300px; }
+  .projects-grid, .skills-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+  header nav ul { display: none; /* Can be replaced with a hamburger menu */ }
+}
+
+@media (max-width: 768px) {
+  .projects-grid, .skills-grid { grid-template-columns: 1fr; }
+  .section-title { font-size: 2.2rem; }
+  
+  /* Fix Terminal for mobile */
+  #dev-terminal-window {
+    width: 90vw; left: 5vw; bottom: 85px; z-index: 100000; height: 350px;
+  }
+  .terminal-output { height: 200px; }
+
+  /* Fix AI Bot for mobile */
+  #ai-bot-window {
+    width: 90vw; right: 5vw; bottom: 85px; height: 400px;
+  }
+  .bot-chat { height: 280px; }
+  
+  /* Global Float controls adjustments */
+  #os-controls { left: 15px; bottom: 15px; gap: 10px; }
+  #os-controls .magnetic { width: 45px; height: 45px; font-size: 1rem; }
+  #ai-bot-trigger { right: 15px; bottom: 15px; width: 45px; height: 45px; font-size: 1rem; }
+  
+  /* Preloader fixes */
+  .logo-loader { font-size: 1.8rem; letter-spacing: 2px; }
+  #loader-percent { font-size: 3rem; }
+  
+  /* Timeline Resizing */
+  .timeline::before { left: 10px; }
+  .timeline-item { width: 100%; padding-left: 40px; padding-right: 0; }
+  .timeline-item::after { left: 0; }
+  .timeline-item:nth-child(even) { left: 0; }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 { font-size: 2.2rem; flex-wrap: wrap; }
+  .hero-content h3 { font-size: 1.2rem; }
+  .mag-letter { padding: 0; }
+  .contact-container { padding: 20px; }
+  .footer-content { flex-direction: column; gap: 15px; text-align: center; }
+}
